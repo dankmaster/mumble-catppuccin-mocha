@@ -1,0 +1,38 @@
+QWidget {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  font-weight: 400;
+  color: #cdd6f4;
+  background-color: #1e1e2e;
+}
+
+QLabel, QCheckBox, QRadioButton {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  color: #cdd6f4;
+}
+
+QPushButton {
+  background-color: #cba6f7;
+  color: #1e1e2e;
+  border: 1px solid #cba6f7;
+  border-radius: 4px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+}
+
+QPushButton:disabled {
+  background-color: #1e1e2e;
+  color: #a6adc8;
+  border: 1px solid #313244;
+}
+
+QLineEdit, QTextEdit {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  border: 1px solid #313244;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=textcatppuccin.qss.map */

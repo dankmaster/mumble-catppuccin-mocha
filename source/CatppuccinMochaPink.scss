@@ -1,0 +1,121 @@
+/*
+ * Mumble Catppuccin Mocha (Pink Accent) Theme – Firefox‑aligned Variant
+ * Now based on Dark upstream definitions + Firefox theme JSON variable mapping.
+ * This entrypoint imports vendor Dark definitions, then overrides variables
+ * using colors from Imports/catppuccinfirefox-pink.json to keep changes token-level.
+ * Build (from source/):
+ *   sass --style=expanded CatppuccinMochaPink.scss ../CatppuccinMochaPink.qss
+ */
+
+// Import upstream Dark definitions as base token set
+@use 'Imports/Dark Definitions' as *;
+
+// Override tokens (Firefox JSON → Mumble variable map) BEFORE base theme consumption
+// Firefox keys reference (toolbar, frame, tab_line, popup, popup_text, etc.)
+// Accent foundation
+$accent: #f5c2e7;
+$accent-r: 245;
+$accent-g: 194;
+$accent-b: 231;
+
+// Window / frame layering
+$base-bg: #1e1e2e;          // toolbar
+$dialog-bg: #1e1e2e;        // popup / consistent surface
+$sub-bg: #181825;           // toolbar_field (darker inner panels)
+$median-bg: #313244;        // derived Catppuccin surface0 for grouping
+
+// Text
+$base-text: #cdd6f4;        // toolbar_text
+$sub-text: #cdd6f4;         // popup_text / sidebar_text
+$base-text-disabled: #6c7086; // muted overlay tone (not in JSON; Catppuccin overlay0)
+
+// Borders & separators
+$base-border: #1e1e2e;              // toolbar_field_border / base seam
+$base-border-focus: #f5c2e7;        // toolbar_field_border_focus (accent)
+$sub-highlight: #6c7086;            // popup_highlight (used for separators)
+$tab-separator: #f5c2e7;            // tab_background_separator / tab_line
+
+// Tabs
+$tab-selected: #1e1e2e;     // tab_selected / toolbar
+$tab-deselected: #11111b;   // frame
+$tab-deselected-text: #cdd6f4; // tab_background_text
+$tab-hover: #313244;        // introduce subtle hover lift
+
+// Menus / popups
+$menu-bg: #1e1e2e;          // popup
+$menuitem-hover: #6c7086;   // popup_highlight
+$menuitem-border: #f5c2e7;  // popup_border
+
+// Buttons & toolbuttons
+$button-bg: #313244;                // derived surface (not explicit in JSON)
+$button-hover: #45475a;             // subtle lift
+$button-focus: #f5c2e7;             // accent
+$button-focus-hover-bg: #f5c2e7;    // accent hover
+$button-focus-hover-border: #f5c2e7;
+$button-border: 1px solid #45475a;
+$button-hover-border: #585b70;
+$toolbutton-on: #f5c2e7;            // icons_attention
+$toolbutton-border: #f5c2e7;
+$toolbutton-hover: #6c7086;         // reuse button_active tone as hover
+$toolbutton-hover-border: #6c7086;
+$toolbutton-pressed: #6c7086;       // button_background_active
+
+// Highlight / selection
+// Previous values used raw accent which appeared too bright on larger selection regions.
+// Shift to Catppuccin Overlay2 tint for calmer contrast; keep text same.
+$highlight-bg: rgba(147, 153, 178, 0.22); // overlay2 gentle selection
+$highlight-pressed: rgba(147, 153, 178, 0.32);
+$highlight-text: #cdd6f4;
+
+// Inputs
+$input-bg: #181825;                 // toolbar_field
+$input-border: 1px solid #1e1e2e;    // toolbar_field_border
+$input-hover: #313244;               // lift
+$control-disabled: #313244;          // fallback surface
+
+// Icons
+$control-icon: #f5c2e7;              // icons
+$control-icon-disabled: #6c7086;     // subdued
+
+// Sliders
+$slider-groove: #313244;
+$slider-groove-border: #313244;
+$slider-fill: #f5c2e7;               // accent
+$slider-fill-border: #f5c2e7;
+$slider-handle: #f5c2e7;
+$slider-handle-border: #f5c2e7;
+$slider-handle-focus: #f5c2e7;
+$slider-handle-focus-border: #f5c2e7;
+$slider-handle-hover: #6c7086;       // active tone
+$slider-handle-pressed: #6c7086;
+$slider-handle-pressed-border: #6c7086;
+
+// Scrollbars (derive subtle tones)
+$scrollbar-border: #1e1e2e;
+$scrollbar-handle: #313244;
+$scrollbar-handle-border: #1e1e2e;
+$scrollbar-handle-hover: #45475a;
+
+// Links
+$link: #f5c2e7;
+
+// After token overrides import the base theme so it consumes adjusted values
+@import 'Imports/Base Theme';
+
+// Optional: Add post-base micro overrides below if needed.
+// Tone down focused button fill (vendor sets background to $button-focus which is full accent)
+QPushButton:focus, QPushButton:hover:focus {
+	background-color: $button-hover; // preserve shape & rely on border for accent
+	border-color: $base-border-focus;
+	color: $sub-text;
+}
+
+// Provide a softer checked/on state for tool buttons using translucent accent instead of solid
+QToolButton:on {
+	background-color: rgba($accent-r, $accent-g, $accent-b, 0.28);
+	border-color: $base-border-focus;
+	color: $sub-text;
+}
+QToolButton:on:hover {
+	background-color: rgba($accent-r, $accent-g, $accent-b, 0.36);
+}

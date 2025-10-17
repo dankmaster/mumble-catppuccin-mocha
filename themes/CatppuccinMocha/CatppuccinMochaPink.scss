@@ -1,0 +1,43 @@
+@use 'sass:math';
+// Catppuccin Mocha Pink Theme SCSS for Mumble QSS (modern module system)
+@use '../../source/Imports/variables.catppuccin-mocha-pink' as pink;
+@use '../../source/Imports/base-theme.module';
+
+// Export main QSS selectors
+QWidget {
+    font-family: pink.$font-family;
+    font-size: pink.$font-size-normal;
+    color: pink.$base-text;
+    background-color: pink.$base-bg;
+}
+
+QLabel, QCheckBox, QRadioButton {
+    font-family: pink.$font-family;
+    font-size: pink.$font-size-normal;
+    color: pink.$base-text;
+}
+
+QPushButton {
+    background-color: pink.$button-bg;
+    color: pink.$base-text;
+    border: pink.$button-border;
+    border-radius: pink.$base-border-radius;
+    font-family: pink.$font-family;
+    font-size: pink.$font-size-normal;
+}
+
+QPushButton:disabled {
+    background-color: pink.$control-disabled;
+    color: pink.$base-text-disabled;
+    border: 1px solid pink.$base-border;
+}
+
+QLineEdit, QTextEdit {
+    background-color: pink.$input-bg;
+    color: pink.$base-text;
+    border: pink.$input-border;
+    font-family: pink.$font-family;
+    font-size: pink.$font-size-normal;
+}
+
+// Add more mappings as needed for full port

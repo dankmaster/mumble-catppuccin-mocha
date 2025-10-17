@@ -1,0 +1,117 @@
+// Catppuccin Mocha Mauve Accent Definitions (cloned & adapted from Pink)
+// Accent progression: default Mauve (#cba6f7), hover Lavender (#b4befe), pressed Blue (#89b4fa)
+// Other surfaces remain aligned with Catppuccin Mocha baseline used in Pink variant.
+
+// Spacing & base metrics
+$base-padding: 4px !default;
+$base-border-radius: 2px !default;
+
+// Core surfaces (Catppuccin Mocha)
+$base-bg: #1e1e2e !default; // base
+$dialog-bg: #1e1e2e !default;
+$median-bg: #313244 !default; // surface0
+$sub-bg: #181825 !default; // mantle
+$sub-hover: #313244 !default; // surface0
+$base-hover: #313244 !default; // surface0
+$base-pressed: #45475a !default; // surface1
+$sub-highlight: #45475a !default; // surface1 (separators)
+
+// Text colors
+$base-text: #cdd6f4 !default; // text
+$sub-text: #cdd6f4 !default;
+$base-text-disabled: #6c7086 !default; // overlay0
+$tab-deselected-text: #bac2de !default; // subtext1
+
+// Borders
+$base-border: #45475a !default; // surface1
+$base-border-focus: #cba6f7 !default; // mauve accent
+
+// Selection & item states
+$item-selected-active-bg: rgba(147, 153, 178, 0.25) !default; // overlay2 25%
+$item-selected-active-border: 1px solid #cba6f7 !default;
+$item-selected-inactive-bg: rgba(147, 153, 178, 0.15) !default; // overlay2 15%
+$item-selected-inactive-border: 1px solid #45475a !default;
+
+// Buttons & controls surfaces
+$button-bg: #313244 !default;
+$button-hover: #45475a !default;
+$button-focus: #cba6f7 !default; // accent
+$button-focus-hover-bg: #b4befe; // hover near lavender for softer focus
+$button-focus-hover-border: #b4befe;
+$button-hover-border: #585b70; // surface2
+$button-border: 1px solid #45475a;
+
+// Highlight (primary accent)
+$highlight-bg: rgba(147, 153, 178, 0.25);
+$highlight-pressed: rgba(147, 153, 178, 0.35);
+$highlight-text: #cdd6f4;
+
+// Toolbuttons (accent progression Mauve -> Lavender -> Blue for depth)
+$toolbutton-on: #cba6f7;
+$toolbutton-border: #cba6f7;
+$toolbutton-hover: #b4befe; // lavender
+$toolbutton-hover-border: #b4befe;
+$toolbutton-pressed: #89b4fa; // blue
+
+// Menu
+$menu-bg: #181825;
+$menuitem-hover: #45475a;
+$menuitem-border: #585b70;
+
+// Scrollbars
+$scrollbar-border: #313244;
+$scrollbar-handle: #45475a;
+$scrollbar-handle-border: #313244;
+$scrollbar-handle-hover: #585b70;
+
+// Inputs
+$input-bg: #181825;
+$input-border: 1px solid #313244;
+$input-hover: #313244;
+$control-disabled: #313244;
+
+// Icons & glyph hues
+$control-icon: #cdd6f4;
+$control-icon-disabled: #6c7086;
+
+// Slider
+$slider-groove: #313244;
+$slider-groove-border: #313244;
+$slider-fill: #cba6f7;
+$slider-fill-border: #cba6f7;
+$slider-handle: #cba6f7;
+$slider-handle-border: #cba6f7;
+$slider-handle-focus: #cba6f7;
+$slider-handle-focus-border: #cba6f7;
+$slider-handle-hover: #b4befe;
+$slider-handle-pressed: #89b4fa;
+$slider-handle-pressed-border: #89b4fa;
+
+// Tabs
+$tab-selected: #1e1e2e;
+$tab-deselected: #181825;
+$tab-separator: #313244;
+$tab-hover: #313244;
+
+// Radio & checkbox assets (reuse dark assets)
+$radio: url(skin:controls/radio_check_dark.svg);
+$radio_disabled: url(skin:controls/radio_check_disabled.svg);
+$checkbox: url(skin:controls/checkbox_check_dark.svg);
+$checkbox-disabled: url(skin:controls/checkbox_check_disabled.svg);
+
+// Links & semantic colors
+$link: #cba6f7;
+
+// Fonts
+$font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$font-size-bigger: 13pt;
+$font-size-big: 12pt;
+$font-size-normal: 10pt;
+$font-size-medium: 9pt;
+$font-size-small: 8pt;
+$font-size-extra-small: 7pt;
+$font-size-qslider-groove: 3pt;
+$font-size-qslider-handle: 4pt;
+
+// Provide median-bg fallback clarity
+$median-bg: #313244;

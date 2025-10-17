@@ -1,0 +1,132 @@
+// Catppuccin Mocha Pink Accent Definitions for Mumble
+// Palette reference: https://github.com/catppuccin/palette (mocha)
+// Accent focus: Pink (#f5c2e7) used for highlights & interactive emphasis
+// Other semantic roles map to Catppuccin recommendations.
+
+// Spacing & base metrics
+$base-padding: 4px !default;
+$base-border-radius: 2px !default;
+
+// Core surfaces (Catppuccin Mocha)
+$base-bg: #1e1e2e !default; // base
+$dialog-bg: #1e1e2e !default; // keep same for cohesion
+$median-bg: #313244 !default; // surface0
+$sub-bg: #181825 !default; // mantle
+$sub-hover: #313244 !default; // surface0 as hover
+$base-hover: #313244 !default; // surface0
+$base-pressed: #45475a !default; // surface1
+$sub-highlight: #45475a !default; // surface1 as separator lines
+$median-bg: #313244 !default; // ensure override if above reused
+
+// Text colors
+$base-text: #cdd6f4 !default; // text
+$sub-text: #cdd6f4 !default; // unify
+$base-text-disabled: #6c7086 !default; // overlay0 subdued
+$tab-deselected-text: #bac2de !default; // subtext1
+
+// Borders
+$base-border: #45475a !default; // surface1 for subtle borders
+$base-border-focus: #f5c2e7 !default; // pink accent when focused
+
+// Selection & item states
+$item-selected-active-bg: rgba(147, 153, 178, 0.25) !default; // overlay2 25% opacity
+$item-selected-active-border: 1px solid #f5c2e7 !default; // pink accent border
+$item-selected-inactive-bg: rgba(147, 153, 178, 0.15) !default; // overlay2 15% opacity
+$item-selected-inactive-border: 1px solid #45475a !default; // surface1 border
+
+// Buttons & controls surfaces
+$button-bg: #313244 !default; // surface0
+$button-hover: #45475a !default; // surface1
+$button-focus: #f5c2e7 !default; // pink
+$button-focus-hover-bg: #f5c2e7; // keep same accent
+$button-focus-hover-border: #f5c2e7;
+$button-hover-border: #585b70; // surface2
+$button-border: 1px solid #45475a; // surface1
+$button-focus-hover-bg: #f5c2e7;
+$button-focus-hover-border: #f5c2e7;
+$base-border-radius: 2px;
+
+// Highlight (primary accent)
+$highlight-bg: rgba(147, 153, 178, 0.25); // overlay2 25% opacity
+$highlight-pressed: rgba(147, 153, 178, 0.35); // overlay2 35% opacity
+$highlight-text: #cdd6f4; // text
+
+// Toolbuttons
+$toolbutton-on: #f5c2e7; // accent state
+$toolbutton-border: #f5c2e7;
+$toolbutton-hover: #eba0ac; // maroon-ish for hover nuance
+$toolbutton-hover-border: #eba0ac;
+$toolbutton-pressed: #f38ba8; // red accent when pressed
+
+// Menu
+$menu-bg: #181825; // mantle
+$menuitem-hover: #45475a; // surface1
+$menuitem-border: #585b70; // surface2
+
+// Scrollbars
+$scrollbar-border: #313244; // surface0
+$scrollbar-handle: #45475a; // surface1
+$scrollbar-handle-border: #313244;
+$scrollbar-handle-hover: #585b70; // surface2
+
+// Inputs
+$input-bg: #181825; // mantle
+$input-border: 1px solid #313244; // surface0
+$input-hover: #313244; // surface0
+$control-disabled: #313244; // surface0
+
+// Icons & glyph hues
+$control-icon: #cdd6f4; // text
+$control-icon-disabled: #6c7086; // overlay0
+
+// Slider
+$slider-groove: #313244; // surface0
+$slider-groove-border: #313244;
+$slider-fill: #f5c2e7; // pink track
+$slider-fill-border: #f5c2e7;
+$slider-handle: #f5c2e7; // pink
+$slider-handle-border: #f5c2e7;
+$slider-handle-focus: #f5c2e7;
+$slider-handle-focus-border: #f5c2e7;
+$slider-handle-hover: #eba0ac;
+$slider-handle-pressed: #f38ba8;
+$slider-handle-pressed-border: #f38ba8;
+
+// Tabs
+$tab-selected: #1e1e2e; // base
+$tab-deselected: #181825; // mantle
+$tab-separator: #313244; // surface0
+$tab-hover: #313244; // surface0
+
+// Radio & checkbox assets (reuse dark assets for now)
+$radio: url(skin:controls/radio_check_dark.svg);
+$radio_disabled: url(skin:controls/radio_check_disabled.svg);
+$checkbox: url(skin:controls/checkbox_check_dark.svg);
+$checkbox-disabled: url(skin:controls/checkbox_check_disabled.svg);
+
+// Links & semantic colors
+$link: #f5c2e7; // Pink accent for links
+
+// Fonts
+$font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$font-size-bigger: 13pt;
+$font-size-big: 12pt;
+$font-size-normal: 10pt;
+$font-size-medium: 9pt;
+$font-size-small: 8pt;
+$font-size-extra-small: 7pt;
+$font-size-qslider-groove: 3pt;
+$font-size-qslider-handle: 4pt;
+
+// Additional derived variables expected by Base Theme.scss but not explicitly customized above
+$toolbutton-on: #f5c2e7;
+$toolbutton-border: #f5c2e7;
+$toolbutton-hover: #eba0ac;
+$toolbutton-hover-border: #eba0ac;
+$toolbutton-pressed: #f38ba8;
+
+// Ensure highlight pressed distinct
+$highlight-pressed: #f38ba8;
+
+// Provide median-bg fallback if re-declared inadvertently
+$median-bg: #313244; // surface0

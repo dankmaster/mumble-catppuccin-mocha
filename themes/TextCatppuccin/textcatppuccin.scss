@@ -1,0 +1,43 @@
+// Text Catppuccin main SCSS entry for Mumble QSS
+@use './textcatppuccin.colors.scss' as *;
+@use './textcatppuccin.fonts.scss' as *;
+
+// Example QSS mappings
+QWidget {
+    font-family: $textcat-font-family;
+    font-size: $textcat-font-size;
+    font-weight: $textcat-font-weight;
+    color: $textcat-text;
+    background-color: $textcat-main;
+}
+
+QLabel, QCheckBox, QRadioButton {
+    font-family: $textcat-font-family;
+    font-size: $textcat-font-size;
+    color: $textcat-text;
+}
+
+QPushButton {
+    background-color: $textcat-accent;
+    color: $textcat-main;
+    border: 1px solid $textcat-border-active;
+    border-radius: 4px;
+    font-family: $textcat-font-family;
+    font-size: $textcat-font-size;
+}
+
+QPushButton:disabled {
+    background-color: $textcat-accent-inactive;
+    color: $textcat-subtext;
+    border: 1px solid $textcat-border-inactive;
+}
+
+QLineEdit, QTextEdit {
+    background-color: $textcat-main;
+    color: $textcat-text;
+    border: 1px solid $textcat-border-inactive;
+    font-family: $textcat-font-family;
+    font-size: $textcat-font-size;
+}
+
+// Add more mappings as needed for full port

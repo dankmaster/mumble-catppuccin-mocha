@@ -1,0 +1,8 @@
+/*
+ * Dracula Theme Variant EntryPoint
+ * Build from source/:
+ *   sass --style=expanded Dracula.scss ../themes/Dracula/Dracula.qss
+ */
+@use 'Dracula Definitions' as *;
+@import 'Imports/Base Theme';
+// Optional additional selectors below

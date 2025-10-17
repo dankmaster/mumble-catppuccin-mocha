@@ -1,0 +1,118 @@
+// Dracula Theme Variable Definitions for Mumble (inspired by draculatheme.com)
+// Palette reference:
+// Background: #282a36, Current Line: #44475a, Selection: #44475a, Foreground: #f8f8f2
+// Comments: #6272a4, Cyan: #8be9fd, Green: #50fa7b, Orange: #ffb86c, Pink: #ff79c6,
+// Purple: #bd93f9, Red: #ff5555, Yellow: #f1fa8c
+
+$base-padding: 4px !default;
+$base-border-radius: 2px !default;
+
+// Core Surfaces
+$base-bg: #282a36 !default; // primary background
+$dialog-bg: #282a36 !default;
+$median-bg: #44475a !default; // current line / panel
+$sub-bg: #1f2029 !default; // slightly deeper mantle tone
+$sub-hover: #44475a !default;
+$base-hover: #3a3d4f !default;
+$base-pressed: #51546a !default;
+$sub-highlight: #44475a !default; // separators
+
+// Text
+$base-text: #f8f8f2 !default;
+$sub-text: #f8f8f2 !default;
+$base-text-disabled: #6272a4 !default; // comment tone subdued
+$tab-deselected-text: #d7d7d2 !default;
+
+// Borders
+$base-border: #44475a !default;
+$base-border-focus: #ff79c6 !default; // pink focus accent
+
+// Selection & item states
+$item-selected-active-bg: rgba(189,147,249,0.25) !default; // purple overlay
+$item-selected-active-border: 1px solid #bd93f9 !default;
+$item-selected-inactive-bg: rgba(98,114,164,0.20) !default; // comment tone overlay
+$item-selected-inactive-border: 1px solid #44475a !default;
+
+// Buttons
+$button-bg: #44475a !default;
+$button-hover: #51546a !default;
+$button-focus: #bd93f9 !default; // purple
+$button-focus-hover-bg: #ff79c6; // pink on hover when focused
+$button-focus-hover-border: #ff79c6;
+$button-hover-border: #51546a; 
+$button-border: 1px solid #44475a;
+
+// Highlight (primary accent used for generic selection)
+$highlight-bg: rgba(255, 121, 198, 0.30); // pink
+$highlight-pressed: rgba(255, 121, 198, 0.40);
+$highlight-text: #f8f8f2;
+
+// Toolbuttons
+$toolbutton-on: #ff79c6; // pink
+$toolbutton-border: #ff79c6;
+$toolbutton-hover: #bd93f9; // purple
+$toolbutton-hover-border: #bd93f9;
+$toolbutton-pressed: #ff5555; // red for pressed state contrast
+
+// Menu
+$menu-bg: #282a36;
+$menuitem-hover: #44475a;
+$menuitem-border: #51546a;
+
+// Scrollbars
+$scrollbar-border: #282a36;
+$scrollbar-handle: #44475a;
+$scrollbar-handle-border: #282a36;
+$scrollbar-handle-hover: #51546a;
+
+// Inputs
+$input-bg: #1f2029;
+$input-border: 1px solid #3a3d4f;
+$input-hover: #3a3d4f;
+$control-disabled: #3a3d4f;
+
+// Icons
+$control-icon: #f8f8f2;
+$control-icon-disabled: #6272a4;
+
+// Slider
+$slider-groove: #3a3d4f;
+$slider-groove-border: #3a3d4f;
+$slider-fill: #ff79c6;
+$slider-fill-border: #ff79c6;
+$slider-handle: #bd93f9;
+$slider-handle-border: #bd93f9;
+$slider-handle-focus: #ff79c6;
+$slider-handle-focus-border: #ff79c6;
+$slider-handle-hover: #ffb86c; // orange
+$slider-handle-pressed: #ff5555; // red
+$slider-handle-pressed-border: #ff5555;
+
+// Tabs
+$tab-selected: #282a36;
+$tab-deselected: #1f2029;
+$tab-separator: #44475a;
+$tab-hover: #3a3d4f;
+
+// Misc / Links
+$link: #8be9fd; // cyan for hyperlinks
+
+// Checkbox / Radio assets (reuse dark variants for now)
+$checkbox: url(skin:controls/checkbox_check_dark.svg);
+$checkbox-disabled: url(skin:controls/checkbox_check_disabled.svg);
+$radio: url(skin:controls/radio_check_dark.svg);
+$radio_disabled: url(skin:controls/radio_check_disabled.svg);
+
+// Fonts
+$font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$font-size-bigger: 13pt;
+$font-size-big: 12pt;
+$font-size-normal: 10pt;
+$font-size-medium: 9pt;
+$font-size-small: 8pt;
+$font-size-extra-small: 7pt;
+$font-size-qslider-groove: 3pt;
+$font-size-qslider-handle: 4pt;
+
+// Fallback clarity
+$median-bg: #44475a;

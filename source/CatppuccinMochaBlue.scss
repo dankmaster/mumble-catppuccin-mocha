@@ -1,0 +1,9 @@
+/*
+ * Catppuccin Mocha Blue Variant
+ * Accent: Blue (#89b4fa) with Lavender (#b4befe) hover and Sapphire (#74c7ec) pressed.
+ * Build from source/:
+ *   sass --style=expanded CatppuccinMochaBlue.scss ../CatppuccinMochaBlue.qss
+ */
+@use 'Catppuccin Mocha Blue Definitions' as *;
+@import 'Imports/Base Theme';
+// Optional micro overrides below

@@ -1,0 +1,9 @@
+/*
+ * Catppuccin Mocha Mauve Variant
+ * Accent: Mauve (#cba6f7) with Lavender (#b4befe) hover and Blue (#89b4fa) pressed depth.
+ * Build from source/:
+ *   sass --style=expanded CatppuccinMochaMauve.scss ../CatppuccinMochaMauve.qss
+ */
+@use 'Catppuccin Mocha Mauve Definitions' as *;
+@import 'Imports/Base Theme';
+// Optional micro overrides below

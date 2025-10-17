@@ -1,0 +1,114 @@
+// Catppuccin Mocha Blue Accent Definitions
+// Accent progression: Blue (#89b4fa) -> Lavender (#b4befe) hover -> Sapphire (#74c7ec) pressed
+
+$base-padding: 4px !default;
+$base-border-radius: 2px !default;
+
+// Surfaces
+$base-bg: #1e1e2e !default;
+$dialog-bg: #1e1e2e !default;
+$median-bg: #313244 !default;
+$sub-bg: #181825 !default;
+$sub-hover: #313244 !default;
+$base-hover: #313244 !default;
+$base-pressed: #45475a !default;
+$sub-highlight: #45475a !default;
+
+// Text
+$base-text: #cdd6f4 !default;
+$sub-text: #cdd6f4 !default;
+$base-text-disabled: #6c7086 !default;
+$tab-deselected-text: #bac2de !default;
+
+// Borders
+$base-border: #45475a !default;
+$base-border-focus: #89b4fa !default;
+
+// Selection
+$item-selected-active-bg: rgba(147,153,178,0.25) !default;
+$item-selected-active-border: 1px solid #89b4fa !default;
+$item-selected-inactive-bg: rgba(147,153,178,0.15) !default;
+$item-selected-inactive-border: 1px solid #45475a !default;
+
+// Buttons
+$button-bg: #313244 !default;
+$button-hover: #45475a !default;
+$button-focus: #89b4fa !default;
+$button-focus-hover-bg: #b4befe;
+$button-focus-hover-border: #b4befe;
+$button-hover-border: #585b70;
+$button-border: 1px solid #45475a;
+
+// Highlight
+$highlight-bg: rgba(147,153,178,0.25);
+$highlight-pressed: rgba(147,153,178,0.35);
+$highlight-text: #cdd6f4;
+
+// Toolbuttons
+$toolbutton-on: #89b4fa;
+$toolbutton-border: #89b4fa;
+$toolbutton-hover: #b4befe; // lavender hover
+$toolbutton-hover-border: #b4befe;
+$toolbutton-pressed: #74c7ec; // sapphire pressed
+
+// Menu
+$menu-bg: #181825;
+$menuitem-hover: #45475a;
+$menuitem-border: #585b70;
+
+// Scrollbars
+$scrollbar-border: #313244;
+$scrollbar-handle: #45475a;
+$scrollbar-handle-border: #313244;
+$scrollbar-handle-hover: #585b70;
+
+// Inputs
+$input-bg: #181825;
+$input-border: 1px solid #313244;
+$input-hover: #313244;
+$control-disabled: #313244;
+
+// Icons
+$control-icon: #cdd6f4;
+$control-icon-disabled: #6c7086;
+
+// Slider
+$slider-groove: #313244;
+$slider-groove-border: #313244;
+$slider-fill: #89b4fa;
+$slider-fill-border: #89b4fa;
+$slider-handle: #89b4fa;
+$slider-handle-border: #89b4fa;
+$slider-handle-focus: #89b4fa;
+$slider-handle-focus-border: #89b4fa;
+$slider-handle-hover: #b4befe;
+$slider-handle-pressed: #74c7ec;
+$slider-handle-pressed-border: #74c7ec;
+
+// Tabs
+$tab-selected: #1e1e2e;
+$tab-deselected: #181825;
+$tab-separator: #313244;
+$tab-hover: #313244;
+
+// Assets
+$radio: url(skin:controls/radio_check_dark.svg);
+$radio_disabled: url(skin:controls/radio_check_disabled.svg);
+$checkbox: url(skin:controls/checkbox_check_dark.svg);
+$checkbox-disabled: url(skin:controls/checkbox_check_disabled.svg);
+
+// Links
+$link: #89b4fa;
+
+// Fonts
+$font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$font-size-bigger: 13pt;
+$font-size-big: 12pt;
+$font-size-normal: 10pt;
+$font-size-medium: 9pt;
+$font-size-small: 8pt;
+$font-size-extra-small: 7pt;
+$font-size-qslider-groove: 3pt;
+$font-size-qslider-handle: 4pt;
+
+$median-bg: #313244;
